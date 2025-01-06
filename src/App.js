@@ -39,17 +39,11 @@ const products = [
     img: "",
     title: "Iphone 14 Pro max",
     description: "Giảm ngay 1,400,000đ áp dụng đến 06/01",
-    price: "26,000,000đ"
+    price: "26,000,000đ",
   },
   {
     img: URL,
     title: "Iphone 15 Pro max",
-    description: "Giảm ngay 1,400,000đ áp dụng đến 06/01",
-    price: "26,000,000đ"
-  },
-  {
-    img: URL,
-    title: "Iphone 16 Pro max",
     description: "Giảm ngay 1,400,000đ áp dụng đến 06/01",
     price: "26,000,000đ"
   },
