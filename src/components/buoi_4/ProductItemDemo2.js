@@ -8,8 +8,6 @@ const Image = ({ src, alt }) => {
 }
 
 const ProductItem = ({ title, img, description, price }) => {
-    // const { title, img, description, price } = product;
-
     const imgData = { src: img, alt: title }
 
     return (

@@ -11,7 +11,7 @@ const ProductItem = ({ product }) => {
             </div>
             <div style={{ padding: "10px 5px" }}>
                 <h2>{title}</h2>
-                <p style={{ margin: "8px 0px" }}>{description} </p>
+                <p style={{ margin: "8px 0px " }}>{description} </p>
                 <h3>{price}</h3>
             </div>
         </div>
