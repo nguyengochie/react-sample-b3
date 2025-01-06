@@ -7,6 +7,9 @@ import Avatar from './components/Avatar';
 import Con from './components/ConComponent';
 import CardItem from './components/buoi_3/CardItem';
 import BlogItem from './components/buoi_3/BlogItem';
+import ProductItem from './components/buoi_4/ProductItem';
+import DemoChildren from './components/buoi_4/DemoChildren';
+import DemoFunctionChild from './components/buoi_4/DemoFunctionChild';
 
 const URL1 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt49z02L--M-q7qodtXZsb0uiyDPdo5RWgxQ&s";
 const URL2 = "https://mir-s3-cdn-cf.behance.net/projects/404/5f3fa8209214981.Y3JvcCwxNDU2LDExMzgsMCww.jpg";
@@ -30,11 +33,36 @@ const blog4 = {
   title: "Xa hoi",
   description: DESC
 }
+const URL = "https://cdn2.fptshop.com.vn/unsafe/750x0/filters:quality(100)/iphone_16_pro_max_desert_titan_3552a28ae0.png";
+const products = [
+  {
+    img: "",
+    title: "Iphone 14 Pro max",
+    description: "Giảm ngay 1,400,000đ áp dụng đến 06/01",
+    price: "26,000,000đ"
+  },
+  {
+    img: URL,
+    title: "Iphone 15 Pro max",
+    description: "Giảm ngay 1,400,000đ áp dụng đến 06/01",
+    price: "26,000,000đ"
+  },
+  {
+    img: URL,
+    title: "Iphone 16 Pro max",
+    description: "Giảm ngay 1,400,000đ áp dụng đến 06/01",
+    price: "26,000,000đ"
+  },
+]
 
 function App() {
   const log = () => {
     alert("hello world");
   }
+
+  const renderProducts = () => (products.map((item) => {
+    return <ProductItem product={item} />
+  }))
 
   return (
     <div style={{ border: "5px solid green" }} className="App">
@@ -66,12 +94,24 @@ function App() {
           icon="❁" />
       </ul>
 
-      <BlogItem blog={blog1} />
-      <BlogItem blog={blog2} />
-      <BlogItem blog={blog3} />
-      <BlogItem blog={blog4} />
-    </div>
+      <button style={{ width: "100px", height: "50px" }} disabled>click me</button>
 
+      <BlogItem blog={blog1} isReading />
+      <BlogItem blog={blog2} isReading />
+      <BlogItem blog={blog3} isReading />
+      <BlogItem blog={blog4} isReading />
+      <img src="" alt hello="123" />
+      <div style={{ display: "flex", gap: "10px" }}>
+        {renderProducts()}
+      </div>
+      <DemoChildren>
+        <h1>Hello world</h1>
+        <h1>green Academy</h1>
+      </DemoChildren>
+      <DemoFunctionChild item={{ a: 1, b2: 0 }}>
+        {() => <h1>hello world function</h1>}
+      </DemoFunctionChild>
+    </div>
   );
 }
 

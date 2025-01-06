@@ -14,8 +14,10 @@ const Thumbnail = (props) => {
     </div>
 }
 
-const BlogItem = (props) => {
-    const { title, description } = props.blog;
+const BlogItem = ({ blog, isReading }) => {
+    const { title, description } = blog;
+    console.log("isReading", isReading);
+
 
     return (
         <div style={{ display: "flex" }}>
