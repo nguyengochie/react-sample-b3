@@ -1,0 +1,9 @@
+.product-item {
+    width: 350px;
+    text-align: center;
+    border: 2px solid #e5e5e5;
+}
+
+.item {
+    background-color: red;
+}

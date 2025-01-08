@@ -10,6 +10,7 @@ import BlogItem from './components/buoi_3/BlogItem';
 import ProductItem from './components/buoi_4/ProductItem';
 import DemoChildren from './components/buoi_4/DemoChildren';
 import DemoFunctionChild from './components/buoi_4/DemoFunctionChild';
+import BtvnBuoi5 from './components/buoi_5/BtvnBuoi5';
 
 const URL1 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt49z02L--M-q7qodtXZsb0uiyDPdo5RWgxQ&s";
 const URL2 = "https://mir-s3-cdn-cf.behance.net/projects/404/5f3fa8209214981.Y3JvcCwxNDU2LDExMzgsMCww.jpg";
@@ -105,6 +106,13 @@ function App() {
       <DemoFunctionChild item={{ a: 1, b2: 0 }}>
         {() => <h1>hello world function</h1>}
       </DemoFunctionChild>
+      <div className='product-item'>
+        <h1>Hello Green Academy</h1>
+        <h1>Hello Green Academy</h1>
+        <h1>Hello Green Academy</h1>
+        <h1>Hello Green Academy</h1>
+      </div>
+      <BtvnBuoi5 />
     </div>
   );
 }
