@@ -18,4 +18,16 @@ const ProductItem = ({ product }) => {
     )
 }
 
-export default ProductItem
+export default ProductItem;
+
+
+//1. đẩy code lên ntn? push
+// - push những thay đổi gì & push lên nhánh nào
+
+// Server: 1-2-3-4-5-6-7-8-9-10
+// Local: 1-2-3-4-5-6-7-8-9-10
+//  - code thêm: 11-12: 1-2-3-4-5-11-12
+
+//2. kéo code về ntn? pull
+// - pull từ nhánh nào
+// - git pull origin <ten nhanh> -> git pull origin master
