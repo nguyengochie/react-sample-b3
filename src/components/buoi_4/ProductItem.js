@@ -43,3 +43,9 @@ export default ProductItem;
 // Server: 1-2-3-4-5-6-7-8-9-10
 
 // main B: 1-2-3-4-5-6-7-8-11-12
+
+// ------ NVM -----
+// nvm ls : hiên thị danh sách các node version đã có trong máy
+// nvm i <version> : nvm i 22 - cài đặt node version
+// nvm use <version có trong máy>: nvm use 18 - chuyển đổi node version
+
