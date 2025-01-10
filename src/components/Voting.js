@@ -25,10 +25,16 @@ const Voting = () => {
     return (
         <div style={{ border: "2px solid tomato", padding: "10px" }}>
             <div style={{ width: "80vh", border: "1px solid black", display: "flex" }}>
-                <div style={{ background: "red", height: "50px", width: `${percentA}%` }}>
+                <div style={{
+                    background: "red", height: "50px",
+                    width: `${!percentA && !percentB ? 50 : percentA}%`
+                }}>
                     <h2>{!voteA ? 0 : percentA.toFixed(2)}%</h2>
                 </div>
-                <div style={{ background: "green", height: "50px", width: `${percentB}%` }}>
+                <div style={{
+                    background: "green", height: "50px",
+                    width: `${!percentA && !percentB ? 50 : percentB}%`
+                }}>
                     <h2>{!voteB ? 0 : percentB.toFixed(2)}%</h2>
                 </div>
             </div>
