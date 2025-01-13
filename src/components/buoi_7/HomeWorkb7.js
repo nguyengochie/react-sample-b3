@@ -23,8 +23,26 @@ const HomeWorkb7 = () => {
             return <div key={item.id}>
                 <input onClick={() => onCheckedTodo(item.id)} type='checkbox' />
                 {item.isDone ? <s>{item.title}</s> : <span>{item.title}</span>}
+                <button onClick={() => onDeleteItem(item.id)}>Delete</button>
             </div>
         })
+    }
+
+    const onDeleteItem = (id) => {
+        //tìm vị trí => xoá
+        // cập nhật state danh sách;
+
+        setTodoList((prevList) => {
+            const copyList = [...prevList];
+            const index = copyList.findIndex((item) => item.id === id);
+
+            if (index === -1) {
+                return prevList;
+            }
+
+            copyList.splice(index, 1);
+            return copyList;
+        });
     }
 
     const addTodo = () => {
