@@ -43,5 +43,4 @@ const ToolBMI = () => {
         </div>
     )
 }
-
 export default ToolBMI
