@@ -1,0 +1,38 @@
+.flex {
+    display: flex;
+}
+
+.gap-10 {
+    gap: 10px
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.container {
+    max-width: 600px;
+    background: #3f3f3f;
+}
+
+.dateContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #ffff;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 6px 10px;
+    width: fit-content;
+    gap: 4px;
+}
+
+.itemContent {
+    background-color: #4b4b4b;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    align-items: center;
+}
