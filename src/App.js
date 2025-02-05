@@ -7,6 +7,7 @@ import Page9 from "./components/pages/Page9";
 import Page11 from "./components/buoi_11/Page11";
 import BaiTap1 from "./components/buoi_11/bai_1";
 import BaiTap2 from "./components/buoi_11/Bai2";
+import Baiap3 from "./components/buoi_11/Baiap3";
 
 // ctrl + shift + o
 function App() {
@@ -19,7 +20,8 @@ function App() {
       {/* <Page9 /> */}
       {/* <Page11 /> */}
       {/* <BaiTap1 /> */}
-      <BaiTap2 />
+      {/* <BaiTap2 /> */}
+      <Baiap3 />
     </div>
   );
 }
