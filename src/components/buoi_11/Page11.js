@@ -63,12 +63,6 @@ const Page11 = () => {
         })
     }
 
-    useEffect(() => {
-        console.log("Listen id Home");
-    }, [])
-
-
-    //listendom
     return (
         <div id="home">
             {console.log("Render id Home")

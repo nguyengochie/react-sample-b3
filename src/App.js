@@ -5,6 +5,8 @@ import Page7 from "./components/pages/Page7";
 import Page8 from "./components/pages/Page8";
 import Page9 from "./components/pages/Page9";
 import Page11 from "./components/buoi_11/Page11";
+import BaiTap1 from "./components/buoi_11/bai_1";
+import BaiTap2 from "./components/buoi_11/Bai2";
 
 // ctrl + shift + o
 function App() {
@@ -15,7 +17,9 @@ function App() {
       {/* <Page7 /> */}
       {/* <Page8 /> */}
       {/* <Page9 /> */}
-      <Page11 />
+      {/* <Page11 /> */}
+      {/* <BaiTap1 /> */}
+      <BaiTap2 />
     </div>
   );
 }
