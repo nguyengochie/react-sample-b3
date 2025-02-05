@@ -4,6 +4,7 @@ import Page6 from "./components/pages/Page6";
 import Page7 from "./components/pages/Page7";
 import Page8 from "./components/pages/Page8";
 import Page9 from "./components/pages/Page9";
+import Page11 from "./components/buoi_11/Page11";
 
 // ctrl + shift + o
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* <Page6 /> */}
       {/* <Page7 /> */}
       {/* <Page8 /> */}
-      <Page9 />
+      {/* <Page9 /> */}
+      <Page11 />
     </div>
   );
 }
