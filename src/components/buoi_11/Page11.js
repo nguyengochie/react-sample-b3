@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import BoxColor from './BoxColor';
 
 const Page11 = () => {
     const [isCheck, setCheck] = useState(false);
@@ -13,6 +14,9 @@ const Page11 = () => {
     useEffect(() => {
         console.log("log in useEffect");
 
+        return () => {
+            console.log("clear...");
+        }
     }, [isCheck, status])
 
     useEffect(() => {
@@ -58,9 +62,18 @@ const Page11 = () => {
             </div>
         })
     }
+
+    useEffect(() => {
+        console.log("Listen id Home");
+    }, [])
+
+
+    //listendom
     return (
-        <div>
-            <div style={{ width: "50px", height: "50px", border: "2px solid black", background: color }}></div>
+        <div id="home">
+            {console.log("Render id Home")
+            }
+            {isCheck && <BoxColor color={color} />}
             <div>
                 <button onClick={() => setColorCode("1")}>red</button>
                 <button onClick={() => setColorCode("2")}>orange</button>
