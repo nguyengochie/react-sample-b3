@@ -1,24 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 
 const Page12 = () => {
-  // viết hàm get API -> lấy Data -> Lưu nó vào State -> map data ra để hiển thị
-  // useEffect                         useState           renderGuests sd listGuest.map
+  const [listGuest, setListGuest] = useState([]);
 
-  // <a href="/detail?id=67a5f1375c593e4d04455632" target="_blank" />
+  const fetchPosts = async () => {
+    try {
+      const resp = await fetch("https://ngochieuwedding.io.vn/api/guest");
+      const data = await resp.json();
+      setListGuest(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
+  const renderGuest = () => {
+    return listGuest.map((guest) => {
+      return <tr key={guest?._id}>
+        <td><a target='_blank' href={`/detail?guestId=${guest?._id}`}>{guest?._id}</a> </td>
+        <td>{guest?.name}</td>
+        <td>{guest?.description}</td>
+      </tr>
+    })
+  }
 
+  useEffect(() => {
+    fetchPosts();
+  }, [])
 
   return (
     <div>
-      <table>
+      <table border="1px">
         <tr>
           <th>id</th>
           <th>name</th>
+          <th>description</th>
         </tr>
-        <tr>
-          <td>id-01</td>
-          <td>Nguyen Van A</td>
-        </tr>
+        {renderGuest()}
       </table>
     </div>
   )
