@@ -8,6 +8,8 @@ import './App.css';
 import Baiap3 from "./components/buoi_11/Baiap3";
 import Page12 from "./components/buoi_12/Page12";
 import Page12Detail from "./components/buoi_12/Page12Detail";
+import Test from "./components/Test";
+import B3Bai1 from "./components/buoi_13/B3Bai1";
 
 // ctrl + shift + o
 function App() {
@@ -19,12 +21,12 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Page12 />} />
           <Route path="/detail" element={<Page12Detail />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <div className="App"> */}
       {/* <Page1 /> */}
       {/* <Page6 /> */}
@@ -36,6 +38,8 @@ function App() {
       {/* <BaiTap2 /> */}
       {/* <Baiap3 /> */}
       {/* </div> */}
+      {/* <Test /> */}
+      <B3Bai1 />
     </>
   );
 }
