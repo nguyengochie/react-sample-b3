@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const B3Bai1 = () => {
     const [users, setUsers] = useState([])
+    const [isLoading, setLoading] = useState([])
     const [searchValue, setSearchValue] = useState("")
 
     const fetchUsers = async () => {
@@ -43,7 +44,6 @@ const B3Bai1 = () => {
     useEffect(() => {
         fetchUsers();
     }, [])
-
 
     return (
         <div>

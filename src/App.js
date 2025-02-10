@@ -10,6 +10,8 @@ import Page12 from "./components/buoi_12/Page12";
 import Page12Detail from "./components/buoi_12/Page12Detail";
 import Test from "./components/Test";
 import B3Bai1 from "./components/buoi_13/B3Bai1";
+import B3Bai2 from "./components/buoi_13/B3Bai2";
+import B3Bai3 from "./components/buoi_13/B3Bai3";
 
 // ctrl + shift + o
 function App() {
@@ -39,7 +41,9 @@ function App() {
       {/* <Baiap3 /> */}
       {/* </div> */}
       {/* <Test /> */}
-      <B3Bai1 />
+      {/* <B3Bai1 /> */}
+      {/* <B3Bai2 /> */}
+      <B3Bai3 />
     </>
   );
 }
