@@ -12,6 +12,9 @@ import Test from "./components/Test";
 import B3Bai1 from "./components/buoi_13/B3Bai1";
 import B3Bai2 from "./components/buoi_13/B3Bai2";
 import B3Bai3 from "./components/buoi_13/B3Bai3";
+import Page13 from "./components/buoi_13/bai_moi/Page13";
+import DemoMemo from "./components/buoi_13/bai_moi/DemoMemo";
+import DemoUseMemo from "./components/buoi_13/bai_moi/DemoUseMemo";
 
 // ctrl + shift + o
 function App() {
@@ -19,8 +22,9 @@ function App() {
   let url = new URL(window.location)
   let params = new URLSearchParams(url.search);
   let sourceid = params.get('id')
-  console.log(sourceid);
+  // console.log(sourceid);
 
+  
   return (
     <>
       {/* <BrowserRouter>
@@ -43,7 +47,9 @@ function App() {
       {/* <Test /> */}
       {/* <B3Bai1 /> */}
       {/* <B3Bai2 /> */}
-      <B3Bai3 />
+      {/* <B3Bai3 /> */}
+      {/* <Page13 /> */}
+      <DemoUseMemo />
     </>
   );
 }
