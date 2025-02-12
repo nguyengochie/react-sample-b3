@@ -15,6 +15,7 @@ import B3Bai3 from "./components/buoi_13/B3Bai3";
 import Page13 from "./components/buoi_13/bai_moi/Page13";
 import DemoMemo from "./components/buoi_13/bai_moi/DemoMemo";
 import DemoUseMemo from "./components/buoi_13/bai_moi/DemoUseMemo";
+import Page14 from "./components/buoi_14/Page14";
 
 // ctrl + shift + o
 function App() {
@@ -24,7 +25,7 @@ function App() {
   let sourceid = params.get('id')
   // console.log(sourceid);
 
-  
+
   return (
     <>
       {/* <BrowserRouter>
@@ -49,7 +50,8 @@ function App() {
       {/* <B3Bai2 /> */}
       {/* <B3Bai3 /> */}
       {/* <Page13 /> */}
-      <DemoUseMemo />
+      <Page14 />
+
     </>
   );
 }
