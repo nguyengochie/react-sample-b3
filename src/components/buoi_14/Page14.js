@@ -6,6 +6,7 @@ import BTVN14Bai4 from './BTVN14Bai4'
 import BTVN14Bai5 from './BTVN14Bai5'
 import BaiMoi from './BaiMoi1'
 import BaiMoi2 from './BaiMoi2'
+import BaiMoiTodo from './BaiMoiTodo'
 
 const Page14 = () => {
     return (
@@ -16,7 +17,8 @@ const Page14 = () => {
             {/* <BTVN14Bai4 /> */}
             {/* <BTVN14Bai5 /> */}
             {/* <BaiMoi /> */}
-            <BaiMoi2 />
+            {/* <BaiMoi2 /> */}
+            <BaiMoiTodo />
         </div>
     )
 }
