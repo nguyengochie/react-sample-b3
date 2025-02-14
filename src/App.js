@@ -19,6 +19,7 @@ import Page14 from "./components/buoi_14/Page14";
 import ThemeProvider from "./components/buoi_15/ThemeContext";
 import Page15 from "./components/buoi_15/Page15";
 import Main from "./components/Main";
+import AuthenProvider from "./components/buoi_15/Bai_tap/AuthenContext";
 
 // ctrl + shift + o
 function App() {
@@ -54,10 +55,11 @@ function App() {
       {/* <B3Bai3 /> */}
       {/* <Page13 /> */}
       {/* <Page14 /> */}
-
-      <ThemeProvider>
-        <Main />
-      </ThemeProvider>
+      <AuthenProvider >
+        <ThemeProvider>
+          <Main />
+        </ThemeProvider>
+      </AuthenProvider>
 
     </>
   );
