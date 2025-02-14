@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react'
+import React, { useContext, useReducer } from 'react'
+import { ThemeCtx } from './ThemeContext';
 
 const DEFAULT_DATA = [{
     id: "CV1",
@@ -35,6 +36,8 @@ const reducer = (state, action) => {
 }
 
 const Buoi15Bai2 = () => {
+    const themContext = useContext(ThemeCtx);
+    console.log("Bai 2", themContext);
     const [todoList, dispatch] = useReducer(reducer, DEFAULT_DATA);
 
     const onAddNewTodo = () => {

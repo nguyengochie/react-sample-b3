@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react'
+import React, { useContext, useReducer } from 'react'
+import { ThemeCtx } from './ThemeContext';
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -14,6 +15,8 @@ const reducer = (state, action) => {
 }
 
 const Buoi15Bai1 = () => {
+    const themContext = useContext(ThemeCtx);
+    console.log("Bai 1", themContext);
     const [count, dispatch] = useReducer(reducer, 0);
 
     const onIncrease = () => {
