@@ -18,6 +18,7 @@ import DemoUseMemo from "./components/buoi_13/bai_moi/DemoUseMemo";
 import Page14 from "./components/buoi_14/Page14";
 import ThemeProvider from "./components/buoi_15/ThemeContext";
 import Page15 from "./components/buoi_15/Page15";
+import Main from "./components/Main";
 
 // ctrl + shift + o
 function App() {
@@ -55,7 +56,7 @@ function App() {
       {/* <Page14 /> */}
 
       <ThemeProvider>
-        <Page15 />
+        <Main />
       </ThemeProvider>
 
     </>
