@@ -34,6 +34,7 @@ const BaiMoiTodo = () => {
     const onDo = (id) => {
         dispatch({ type: "DO", id })
     }
+
     const onUndo = (id) => {
         dispatch({ type: "UNDO", id })
     }
