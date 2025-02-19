@@ -12,7 +12,8 @@ const FormLogin = () => {
 
     const onLogin = () => {
         if (formLogin.username === "admin" && formLogin.password === "1234") {
-            setIsLogin(true)
+            setIsLogin(true);
+            localStorage.setItem("isLogin", true);
             // success
         } else {
             setFormLogin(false)
@@ -33,7 +34,10 @@ const FormLogin = () => {
                         onChange={(e) => onInput("password", e.target.value)} placeholder='password' />
                 </div>
                 <button onClick={onLogin}>Login</button>
-            </> : <button onClick={() => setIsLogin(false)}>Logout</button>}
+            </> : <button onClick={() => {
+                setIsLogin(false)
+                localStorage.removeItem("isLogin");
+            }}>Logout</button>}
         </div>
     )
 }

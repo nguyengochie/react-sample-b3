@@ -3,7 +3,8 @@ import React, { createContext, useState } from 'react'
 export const AuthenCtx = createContext();
 
 const AuthenProvider = ({ children }) => {
-    const [isLogin, setIsLogin] = useState(false);
+    const isLoginLocal = localStorage.getItem("isLogin")
+    const [isLogin, setIsLogin] = useState(isLoginLocal);
 
     return (
         <AuthenCtx.Provider value={{ isLoginSuccess: isLogin, setIsLogin }}>
